@@ -1,0 +1,26 @@
+[
+  {
+    "id": "caacd611-e77b-461d-be96-cb6a959e78ef",
+    "name": "house wine",
+    "desc": "some delicious house wine",
+    "thumb": "https://www.ocado.com/productImages/236/236564011_0_640x640.jpg?identifier=dbf09c042f393cde1cb29fb32af39a5f",
+    "price": 5.50,
+    "measure": "250ml"
+  },
+  {
+    "id": "9b5b3dd0-43e7-4ca8-b9d6-dcc56250fa46",
+    "name": "small batch artisan pear infused craft beer",
+    "desc": "very rare and hip beer, super hoppy!",
+    "thumb": "http://www.psdmockups.com/wp-content/uploads/2013/04/hangar24-craft-brewery-beer-bottle-product-photograph.jpg",
+    "price": 9.99,
+    "measure": "350ml"
+  },
+  {
+    "id": "82a6b58c-dfed-4140-9f1c-ebd0b81a15bf",
+    "name": "tap water",
+    "desc": "for the designated driver",
+    "thumb": "https://pbs.twimg.com/profile_images/477120587144232960/Qa_FR7iE.jpeg",
+    "price": 0,
+    "measure": "500ml"
+  }
+]
