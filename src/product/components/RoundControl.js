@@ -8,7 +8,7 @@ export default function RoundControl({onRemoveClick, onAddClick, onChange, qty})
 
   return (
     <div>
-      <button onClick={onRemoveClick}>-</button><input onChange={handleInputChange} type="number" value={qty} /><button onClick={onAddClick}>+</button>
+      <button onClick={onRemoveClick}>-</button><input className="two-column" onChange={handleInputChange} type="number" value={qty} /><button onClick={onAddClick}>+</button>
     </div>
   );
 }

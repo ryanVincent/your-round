@@ -9,7 +9,9 @@ class App extends Component {
         <div className="App-header">
           <h2>Your Round!</h2>
         </div>
-        {this.props.children}
+        <div className="App-body">
+          {this.props.children}
+        </div>
       </div>
     );
   }

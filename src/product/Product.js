@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ProductList from './components/ProductList';
-import Order from './round/components/Order';
+import Order from './order/components/Order';
 import { fetchProducts } from './api';
 
 class Product extends Component {

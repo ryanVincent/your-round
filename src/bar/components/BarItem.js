@@ -7,10 +7,11 @@ export default function PubItem({ bar, onViewMenuClick }) {
   const url = `/bars/${bar.id}/products`;
 
   return (
-    <li>
+    <li className="item">
       <div>
         <h2>{bar.name}</h2>
-        <p><span>{bar.address}</span><span>{bar.distance_to}</span></p>
+        <p><span>{bar.address}</span></p>
+        <p><span>{bar.distance_to} miles</span></p>
         <Link to={url}>View Drink Menu</Link>
       </div>
     </li>

@@ -10,9 +10,9 @@ export default function ProductItem({ product, onRemoveClick, onAddClick, onChan
   const qty = round[product.id] ? round[product.id].qty : 0;
 
   return (
-    <li>
+    <li className="item">
       <h3>{product.name}</h3>
-      <img src={product.imageUrl} />
+      <img className="thumb" src={product.imageUrl} />
       <p>{product.desc}</p>
       <RoundControl onRemoveClick={handleRemoveClick} onAddClick={handleAddClick} onChange={handleOnChange} qty={qty} />
     </li>

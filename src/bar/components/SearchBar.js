@@ -7,6 +7,6 @@ export default function SearchBar({ onChange }) {
     onChange(searchTerm);
   }
   return (
-    <input type="search" onChange={handleChange} />
+    <input className="search" type="search" onChange={handleChange} />
   )
 }
