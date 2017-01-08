@@ -11,7 +11,7 @@ cd ./your-round
 npm start
 ```
 
-As this is just a prototype I haven't used relied on any frameworks for state management and instead have made use of ```setState``` within Container components. I have also only applied some minor styling to the prototype as I know the CEO will want to change the colors later.
+As this is just a prototype I haven't relied on any frameworks for state management and instead have made use of ```setState``` within Container components. Also, I have only applied some minor styling to the prototype as I know the CEO will want to change the colors later.
 
 # API
 
