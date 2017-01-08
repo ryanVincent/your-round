@@ -2,8 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-The application can be viewed at [your-round.herokuapp.com](your-round.herokuapp.com)
-To run execute the following:
+The application can be viewed at [your-round.herokuapp.com](your-round.herokuapp.com).
+To run locally execute the following:
 
 ```
 npm install
