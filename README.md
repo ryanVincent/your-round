@@ -44,7 +44,7 @@ distance_to|int|distance to the bar from current location in miles (optional)|32
 
 ## GET /api/bars/:barId/products
 
-Returns a list of all products for the bar with the specified ```:barId```. The resonse should be a JSON object the following format:
+Returns a list of all products for the bar with the specified ```:barId```. The response should be a JSON object the following format:
 
 property|type|description|example
 --------|----|-----------|-------
