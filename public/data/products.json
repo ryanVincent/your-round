@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "house wine",
+    "desc": "some delicious house wine",
+    "imageUrl": "https://www.ocado.com/productImages/236/236564011_0_640x640.jpg?identifier=dbf09c042f393cde1cb29fb32af39a5f",
+    "currentPrice": 9.99
+  },
+  {
+    "id": 2,
+    "name": "small batch artisan pear infused craft beer",
+    "desc": "very rare and hip beer, super hoppy!",
+    "imageUrl": "http://www.psdmockups.com/wp-content/uploads/2013/04/hangar24-craft-brewery-beer-bottle-product-photograph.jpg",
+    "currentPrice": 3.99
+  },
+  {
+    "id": 3,
+    "name": "water",
+    "desc": "for the designated driver",
+    "imageUrl": "https://pbs.twimg.com/profile_images/477120587144232960/Qa_FR7iE.jpeg",
+    "currentPrice": 1.50
+  }
+]

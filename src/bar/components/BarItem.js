@@ -4,7 +4,7 @@ export default function PubItem({ bar, onViewMenuClick }) {
 
   const handleClick = () => { console.log(bar) };
 
-  const url = `/bars/${bar.id}/drinks`;
+  const url = `/bars/${bar.id}/products`;
 
   return (
     <li>
