@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ProductList from './components/ProductList';
+import Order from './round/components/Order';
 import { fetchProducts } from './api';
 
 class Product extends Component {
@@ -8,12 +9,15 @@ class Product extends Component {
 
         this.state = {
           products: [],
-          round: {}
+          round: {},
+          orderMode: false
         };
 
         this.handleAddItemClick = this.handleAddItemClick.bind(this);
         this.handleRemoveItemClick = this.handleRemoveItemClick.bind(this);
         this.handleQtyChange = this.handleQtyChange.bind(this);
+        this.handleViewOrderClick = this.handleViewOrderClick.bind(this);
+        this.handleViewDrinksMenuClick = this.handleViewDrinksMenuClick.bind(this);
     }
 
     componentDidMount() {
@@ -40,7 +44,7 @@ class Product extends Component {
 
     handleRemoveItemClick(product) {
       const round = this.state.round;
-      
+
       if (round[product.id]) {
         if (round[product.id].qty === 1) {
           delete round[product.id];
@@ -73,10 +77,32 @@ class Product extends Component {
 
     }
 
+    handleViewOrderClick() {
+      this.setState({
+        orderMode: true
+      })
+    }
+
+    handleViewDrinksMenuClick() {
+      this.setState({
+        orderMode: false
+      })
+    }
+
     render() {
-        const { products, round } = this.state;
-        console.log(round);
-        return <ProductList products={products} round={round} onAddItemClick={this.handleAddItemClick} onRemoveItemClick={this.handleRemoveItemClick} onQtyChange={this.handleQtyChange} />;
+        const { products, round, orderMode } = this.state;
+        return (orderMode ?
+         <Order order={round} onViewDrinksMenuClick ={this.handleViewDrinksMenuClick}/> :
+         <ProductList
+            products={products}
+            round={round}
+            onViewOrderClick={this.handleViewOrderClick}
+            onAddItemClick={this.handleAddItemClick}
+            onRemoveItemClick={this.handleRemoveItemClick}
+            onQtyChange={this.handleQtyChange}
+          />
+       );
+
     }
 }
 
